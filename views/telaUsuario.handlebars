@@ -1,0 +1,20 @@
+<h1>Usuario cadastrado</h1>
+<style>
+    p{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 22px;
+    }
+</style>
+<form action="/" method="get">
+    {{#each exibir}}
+    {{#printOnce @index}}
+        <h3>Nome: {{nome}}</h3>
+        <p>Senha: {{senha}}</p>
+        <p>Idade: {{idade}}</p>
+        <p>CPF: {{cpf}}</p>
+    {{/printOnce}}
+    {{/each}}
+    <button type="submit">Voltar para o menu inicial</button>
+</form>
